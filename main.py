@@ -7,10 +7,10 @@
 
 from classes.udpflood import udpflood
 #from classes.logview import logview
-#from classes.exportfile import exportfile       
-#from classes.message import message
+#from classes.exportfile import exportfile     
+from classes.message import message
 from classes.portscan import portscan
-#from classes.synflood import synflood
+from classes.synflood import synflood
 
 
 
@@ -41,12 +41,14 @@ def menu():
     elif escolha == '3':
         print("ATAQUE SYN TCP")
         s = synflood()
+        s.synflood()
     elif escolha == '4':
         print("LOG MIKROTIK")
         l = logview()
     elif escolha == '5':
         print("MSG RSA")
         m = message()
+        m.menumessage()
     elif escolha == 'x':
         print("ADEUS")
         exit()
