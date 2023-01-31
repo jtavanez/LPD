@@ -1,0 +1,2 @@
+class synflood: 
+    print (" ")

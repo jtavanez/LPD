@@ -1,0 +1,2 @@
+class logview: 
+    print (" ")
